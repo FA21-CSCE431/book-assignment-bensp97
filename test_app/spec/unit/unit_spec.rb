@@ -5,8 +5,8 @@ RSpec.describe Book, type: :model do
   subject do
     described_class.new(title: 'harry potter')
     described_class.new(author: 'J. K. Rowling')
-    described_class.new(price: '15')
-    described_class.new(publisheddate: '19970626')
+    described_class.new(price: '15.95')
+    described_class.new(publisheddate: '1997-06-26')
   end
 
   it 'is valid with valid attributes' do
@@ -32,4 +32,8 @@ RSpec.describe Book, type: :model do
     subject.publisheddate = nil
     expect(subject).not_to be_valid
   end
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> Reseting
