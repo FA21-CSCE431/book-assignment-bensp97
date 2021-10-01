@@ -32,8 +32,4 @@ RSpec.describe Book, type: :model do
     subject.publisheddate = nil
     expect(subject).not_to be_valid
   end
-<<<<<<< HEAD
 end
-=======
-end
->>>>>>> Reseting
