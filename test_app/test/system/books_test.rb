@@ -14,17 +14,14 @@ class BooksTest < ApplicationSystemTestCase
     visit books_url
     click_on "New Book"
 
-<<<<<<< HEAD
-=======
     fill_in "Author", with: @book.author
     fill_in "Price", with: @book.price
     fill_in "Publisheddate", with: @book.publisheddate
->>>>>>> Reseting
     fill_in "Title", with: @book.title
     click_on "Create Book"
 
     assert_text "Book was successfully created"
-    click_on "Back"
+    click_on "Home Page"
   end
 
   test "updating a Book" do
@@ -38,7 +35,7 @@ class BooksTest < ApplicationSystemTestCase
     click_on "Update Book"
 
     assert_text "Book was successfully updated"
-    click_on "Back"
+    click_on "Home Page"
   end
 
   test "destroying a Book" do

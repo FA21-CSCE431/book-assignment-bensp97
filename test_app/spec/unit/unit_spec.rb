@@ -28,8 +28,5 @@ RSpec.describe Book, type: :model do
     expect(subject).not_to be_valid
   end
 
-  it 'is not valid without a published date' do
-    subject.publisheddate = nil
-    expect(subject).not_to be_valid
-  end
+
 end
